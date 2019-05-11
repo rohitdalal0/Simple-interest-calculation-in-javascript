@@ -1,0 +1,79 @@
+  <html>
+    <head>
+        <title>Simple Interest</title>
+    </head>
+    <script>
+
+        function getvalue()
+        {
+
+            m = document.getElementById("m").value;
+            y = document.getElementById("y").value;
+            r= document.getElementById("r").value;
+
+             print.innerHTML = "<h2>The interset is:</h2> " +"<h1>"+ (m*y*r)/100+ "</h1>";
+
+            print = document.getElementById("print");
+
+
+        }
+    
+    </script>
+    <style>
+        body{
+            color: white;
+            text-transform: uppercase;
+            background: linear-gradient(45deg,rgb(70, 63, 63),rgb(81, 81, 117),rgb(190, 68, 11));
+        }
+        center{
+            width: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        body input[id="y"]{
+            margin-left: 31px;
+
+        }
+        body input[id="r"]{
+            margin-left: 104px;
+        }
+        body input{
+            border: none;
+            border: 0.5px solid white;
+        }
+        body button{
+            border: none;
+            border: .5px solid white;
+            margin-top: 30px;
+            padding: 10px 30px;
+            font-size: 15px;
+            border: none;
+            animation: animate 5s infinite linear;
+        }
+        body input,label{
+            margin: 0;
+            padding: 0;
+        }
+        body button:hover{
+            background-color: rgb(187, 63, 63);
+            color: rgb(255, 255, 255);
+
+        }
+
+    </style>
+    <body>
+
+        
+<center>
+        <h1>This is simple interest</h1>
+             <label>Money principle:<input id="m"></label><br/><br/>
+
+             <label>Months(Time):<input id="y"></label><br/><br/>
+
+             <label>Rate:<input id="r"></label><br/><br/>
+
+            <button onclick="getvalue()">Calculate</button>
+            <p id="print"></p>
+</center>
+    </body>
+</html>
